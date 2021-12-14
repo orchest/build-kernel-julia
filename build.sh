@@ -1,7 +1,7 @@
 git clone --branch feature-julia-kernel https://github.com/ricklamers/enterprise_gateway
 
 # download EG kernel files
-VERSION=2.3.0
+VERSION=2.5.2
 wget https://github.com/jupyter/enterprise_gateway/releases/download/v$VERSION/jupyter_enterprise_gateway_kernel_image_files-$VERSION.tar.gz --directory-prefix=enterprise_gateway/etc/docker/kernel-julia
 
 # prepare build context
