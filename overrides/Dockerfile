@@ -1,4 +1,4 @@
-ARG BASE_CONTAINER=jupyter/datascience-notebook:julia-1.5.3
+ARG BASE_CONTAINER=jupyter/datascience-notebook:julia-1.7.0
 FROM $BASE_CONTAINER
 
 # Switch back to root to modify ownerships
