@@ -10,4 +10,7 @@ cp enterprise_gateway/etc/kernel-launchers/bootstrap/bootstrap-kernel.sh enterpr
 cp overrides/Dockerfile enterprise_gateway/etc/docker/kernel-julia/
 
 # build
-docker build -t orchest/kernel-julia:$VERSION enterprise_gateway/etc/docker/kernel-julia/
+docker build \
+    --label maintainer="Orchest B.V. https://www.orchest.io" \
+    -t orchest/kernel-julia:$VERSION \
+    enterprise_gateway/etc/docker/kernel-julia/
